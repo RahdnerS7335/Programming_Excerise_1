@@ -6,7 +6,7 @@ The program tracks the remaining tickets and counts the total number of buyers.
 """
 
 # Constant for maximum tickets
-MAX_TICKETS = 20
+MAX_TICKETS = 10
 
 # Constant for maximum tickets per buyer
 MAX_PER_BUYER = 4
