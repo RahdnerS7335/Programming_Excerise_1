@@ -17,7 +17,7 @@ def tickets_sold():
 
     Variables:
         ticketsRemaining: number of tickets still available
-        buyerCount: counting total buyers
+        ticketsBought: counting total buyers
         buyTickets: number of tickets want to be bought by buyer
 
     Logical Steps:
@@ -34,7 +34,7 @@ def tickets_sold():
     ticketsRemaining = MAX_TICKETS
 
     # Initialize buyer counter
-    buyerCount = 0
+    ticketsBought = 0
 
     # Continue selling until tickets are gone
     while ticketsRemaining > 0:
@@ -55,16 +55,16 @@ def tickets_sold():
             ticketsRemaining -= buyTickets
 
             # Add to buyer counter
-            buyerCount += 1
+            ticketsBought += 1
 
             # Display remaining tickets
             print("Tickets remaining:", ticketsRemaining)
 
     # Display total buyers once tickets are sold out
-    display_results(buyerCount)
+    display_results(ticketsBought)
 
 
-def display_results(buyerCount):
+def display_results(ticketsBought):
     """
     Displays the total number of buyers.
 
@@ -79,7 +79,7 @@ def display_results(buyerCount):
     """
 
     print("\nTickets sold out.")
-    print("Total number of buyers:", buyerCount)
+    print("Total number of buyers:", ticketsBought)
 
 
 # Call the main function
