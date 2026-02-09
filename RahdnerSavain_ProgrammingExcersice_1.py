@@ -40,7 +40,7 @@ def tickets_sold():
     while ticketsRemaining > 0:
 
         # Asks user for number of tickets wants to be bought
-        buyTickets = int(input("How many tickets do you want to buy? (Max of 4): "))
+        buyTickets = int(input("10 tickets for pre-sale. How many do you want? (Max purchase of 4 tickets per person): "))
 
         # Check to see if user inputs a # within range (1-4)
         if buyTickets < 1 or buyTickets > MAX_PER_BUYER:
